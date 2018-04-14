@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.readfromcsv.showDatabase">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="80dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="true"
+            android:textColor="#ff0000"
+            android:text="Id"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_toRightOf="@id/id"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="true"
+            android:textColor="#ff0000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="name"/>
+
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_toRightOf="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="true"
+            android:textColor="#ff0000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Contact"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/linear_layout"
+        android:background="@android:color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/list"
+
+        android:layout_below="@id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    </ListView>
+
+</RelativeLayout>
